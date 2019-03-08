@@ -18,7 +18,52 @@
         <div class="container">
             <h1 class="display-4">Cyrstals Collector</h1>
         </div>
+    </div>     
+    <div class="jumbotron jumbotron-fluid" style="background-color:purple; font-family:Arial, Helvetica, sans-serif">
+        <div class="container" style="color:white;">
+            <p class="lead">You will be given a random number at the start of the game.</p><br>
+            <p class="lead">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p><br>
+            <p class="lead">You win the game by matching your total score to random number, you lose the game if your total score gores above the random number</p><br>
+            <p class="lead">The value of each crystal is hidden from you until you click on it.</p><br>
+            <p class="lead">Each time the game starts, the game will change the values of each crystal.</p>
+        </div>
+    </div> 
+    <div class="card" style="width: 18rem; float: left; width: 50%;">
+        <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Computer Score</h5>
+            <p class="card-text"><span></span></p>
+        </div>
     </div>
-    
+    <div class="card" style="width: 18rem; float: left; width: 50%;">
+        <div class="card-body" style="text-align: center;">
+            <h5 class="card-title">Your Score</h5>
+            <p class="card-text"><span></span></p>
+        </div>
+    </div> 
+    <div class="row" style="clear:both;">
+        <div class="column" style="margin-left:auto; width: 25%;">
+            <img id="blueCrystal" src="assets/images/blue.png" alt="blue crystal" style="width:100%">
+        </div>
+        <div class="column" style="width: 25%;">
+            <img id="greenCrystal" src="assets/images/green.png" alt="green crystal" style="width:100%">
+        </div>
+        <div class="column" style="width: 25%;">
+            <img id="redCrystal" src="assets/images/red.png" alt="red crystal" style="width:100%">
+        </div>
+        <div class="column" style="margin-right:auto; width: 25%; border-bottom-color: red;">
+            <img id="yellowCrystal" src="assets/images/yellow.png" alt="yellow crystal" style="width:100%">
+        </div>
+    </div>
+    <div class="card text-center">
+        <div class="card-header">
+            Wins:
+        </div>
+        <div class="card-body">
+            <p class="card-text">
+                Losses:
+            </p>
+        </div>
+    </div>
+
 </body>
 </html>

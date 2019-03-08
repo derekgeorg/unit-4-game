@@ -6,4 +6,26 @@ h1 {
 }
 .jumbotron {
     background-color: orange;
+    margin-bottom: 0;
+}
+.lead {
+    text-align: center;
+}
+.crystals {
+    align-self: center;
+}
+.row {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+#blueCrystal {
+    border-color: lightgray;
+    border-style: solid;
+    border: 2px;
+    margin-left: auto;
+    
+}
+#yellowCrystal {
+    margin-right:auto;
 }
