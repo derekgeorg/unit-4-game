@@ -7,18 +7,17 @@ var blueCrystalValue
 var greenCrystalValue
 var redCrystalValue
 var yellowCrystalValue
-var min = 19
-var max = 120
-var valueMin = 1
-var valueMax = 12
+var compMin = 19
+var compMax = 120
+var crystalValueMin = 1
+var crystalValueMax = 12
 
-//The gameSetup method is called when the page first loads.
+//Here we generate a random number for computerScore
 object.onload = function() {
     var compNumber = Math.floor(Math.random() * 120) + 19;
     console.log(compNumber);
 }
-    //Here we generate a random number for computerScore
-
+    
 //Each game
     //Randomly select a "computerScore" between 19-120.
     //Display random "computerScore" under Computer Score card.
@@ -27,6 +26,11 @@ object.onload = function() {
 //.onClick of each crystal, take value and add to "yourCounter" total
 
 //if "yourCounter" = "computerScore"; alert: you win! wins++
+if(yourScore === computerScore){
+    wins++;
+    $("#winsCount").innerHTML = wins;
+    document.getElementById("wins").innerHTML = wins;
+}
 //else "yourCounter" > "computerScore"; alert: you lose. losses++
 
 //reset after win++ or losses++
