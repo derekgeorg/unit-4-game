@@ -27,6 +27,7 @@ $(document).ready(function () {
         console.log(compNumber);
         //Display random "computerScore" under Computer Score card.
         $("#computerScore").text(compNumber);
+        console.log($("#computerScore"))
         //Randomly assign a value between 1-12 to each crystal: #blueCrystal, #greenCrystal, #redCrystal, #yellowCrystal
         $("#blueCrystal").val(Math.floor(Math.random() * 12) + 1);
         console.log($("#blueCrystal").val())
@@ -39,13 +40,14 @@ $(document).ready(function () {
         yourScore = 0;
     }
     setUp();
-    //.onClick of each crystal, take value and add to "yourCounter" total
+
+    //.onClick of each crystal, take value and add to "yourScore" total
     $("img").on("click", function () {
-        yourScore += $(this).val();
+        // yourScore = yourScore + ;
+        yourScore = $(this).val();
         $("#yourScore").text(yourScore);
         console.log(yourScore);
         //reset after win++ or losses++
-        //upon reset change "yourCounter" === 0 and generate a new computerScore.
         if (yourScore === computerScore) {
             wins++;
             $("#winsCount").text(wins);
@@ -54,12 +56,8 @@ $(document).ready(function () {
         else if (yourScore > computerScore) {
             losses++;
             $("#lossesCount").text(losses);
-
             setUp();
         }
-
+        //upon reset change "yourCounter" === 0 and generate a new computerScore.
     });
-
-
-
 });
